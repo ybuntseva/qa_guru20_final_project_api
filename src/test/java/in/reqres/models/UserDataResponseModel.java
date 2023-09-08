@@ -8,5 +8,4 @@ public class UserDataResponseModel {
     private String job;
     private String id;
     private String createdAt;
-    private String updatedAt;
 }
