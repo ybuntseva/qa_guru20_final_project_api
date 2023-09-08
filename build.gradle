@@ -13,7 +13,6 @@ repositories {
 
 def restAssuredVersion = "5.3.1",
     allureVersion = "2.24.0",
-    selenideVersion = "6.17.2",
     junit5Version = "5.10.0",
     assertjVersion = "3.24.2"
 
@@ -37,7 +36,6 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.rest-assured:json-schema-validator:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "com.codeborne:selenide:$selenideVersion",
             "org.junit.jupiter:junit-jupiter:$junit5Version",
             'org.slf4j:slf4j-simple:2.0.7',
             "org.assertj:assertj-core:$assertjVersion"
@@ -61,5 +59,17 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+
+task user_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("user")
+    }
+}
+
+task resource_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("resource")
     }
 }
