@@ -18,14 +18,13 @@ def restAssuredVersion = "5.3.1",
 
 allure {
     report {
-        version.set(allureVersion) //версия Allure Report (https://github.com/allure-framework/allure2)
+        version.set(allureVersion)
     }
     adapter {
-        aspectjWeaver.set(true) // обработка аннотации @Step
+        aspectjWeaver.set(true)
         frameworks {
             junit5 {
                 adapterVersion.set(allureVersion)
-                //версия Allure JUnit5 (https://github.com/allure-framework/allure-java)
             }
         }
     }
