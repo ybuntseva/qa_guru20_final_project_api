@@ -75,7 +75,7 @@ After test execution <code>Telegram</code> bot sends a notification with test ru
 
 [Back to table of contents ⬆](#pushpin-table-of-contents)
 
-# <img width="4%" style="vertical-align:middle" title="AllureReport" src="images/icons/allure-Report-logo.svg"> <a name="AllureReport">Test run results in [Allure Report](https://jenkins.autotests.cloud/job/qa_guru20_api_final_project/4/allure/)</a>
+# <img width="4%" style="vertical-align:middle" title="AllureReport" src="images/icons/allure-Report-logo.svg"> <a name="AllureReport">Test run results in [Allure Report](https://jenkins.autotests.cloud/job/qa_guru20_api_final_project/allure/)</a>
 
 ## Allure report main page
 Allure main page contains:
@@ -117,7 +117,7 @@ Dashboard in <code>Allure TestOps</code> contains pie charts with test execution
 
 [Back to table of contents ⬆](#pushpin-table-of-contents)
 
-# <img width="4%" style="vertical-align:middle" title="Jira" src="images/icons/jira-logo.svg"> <a>Интеграция с Jira</a>
+# <img width="4%" style="vertical-align:middle" title="Jira" src="images/icons/jira-logo.svg"> <a>Integration with [Jira](https://jira.autotests.cloud/browse/HOMEWORK-874)</a>
 <code>Allure TestOps</code> is integrated with <code>Jira</code>, Jira tickets contain information about created test cases and test run results.
 <p align="center">
   <img src="images/screenshots/jira-integration.png" alt="JiraIntegration" width="950">
